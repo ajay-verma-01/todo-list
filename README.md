@@ -36,7 +36,7 @@ Path - main project: App_Data/TodoListDB.db
 Path – test project : App_Data/TodoListDB.Test.db
 
 Tables:
-1.	TODO
+1.	TODO: 
 CREATE TABLE "Todo" (
 	"id"	INTEGER NOT NULL,
 	"userId"	TEXT NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE "Todo" (
 	PRIMARY KEY("id" AUTOINCREMENT)
 )
 
-2.	USER
+2.	USER: 
 CREATE TABLE "User" (
 	"userId"	TEXT NOT NULL,
 	"password"	TEXT NOT NULL,
