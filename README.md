@@ -1,7 +1,7 @@
 # TODO-LIST
 
 About: This is a web application; user can add new todo items to a list, user can mark todo items as complete and user can view current and historic todo items. 
-Front-end is build using Angular 11 with bootstrap and back-end service is build using Asp.Net Core 3.1. It is using Sqlite3 database, entity framework, JwtToken authentication, xUnit, Moq and Serilog. It works on browser chrome and IE11.
+Front-end is build using Angular 11, with TypeScript and Bootstrap; and back-end service is build using Asp.Net Core 3.1. It is using Sqlite3 database, entity framework, JwtToken authentication, xUnit, Moq and Serilog. It works on browser chrome and IE11.
 
 # TodoListService:
 Pre-requisite to debug code: Asp.Net Core 3.1, Microsoft Visual Studio Community 2019.
