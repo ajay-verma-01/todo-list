@@ -1,7 +1,7 @@
 # TODO-LIST
 
 About: This is a web application; user can add new todo items to a list, user can mark todo items as complete and user can view current and historic todo items. 
-Front-end is build using Angular 11 with bootstrap and back-end service is build using Asp.Net Core 3.1. It is using Sqlite3 database, entity framework, JwtToken authentication, xUnit, Moq and Serilog.
+Front-end is build using Angular 11 with bootstrap and back-end service is build using Asp.Net Core 3.1. It is using Sqlite3 database, entity framework, JwtToken authentication, xUnit, Moq and Serilog. It works on browser chrome and IE11.
 
 # TodoListService:
 Pre-requisite to debug code: Asp.Net Core 3.1, Microsoft Visual Studio Community 2019.
@@ -28,6 +28,7 @@ Desktop Setup
 3.	To install dependencies run command “npm install” using VS Code terminal / or run “npm install” from command prompt.
 4.	To run the application run command “ng serve” using VS Code terminal / or run “ng server using command prompt”.
 5.	Launch the chrome browser and browse http://localhost:4200
+6.      To run it in IE 11, run the command "ng serve --configuration es5" and browse http://localhost:4200.
 
 Note: 1. Angular app will run default at port 4200. If it is not able to connect to TodoListService then please check and confirm that TodoListService is up and running. TodoListService runs default on port 5000. If it is running on different port then you can correct the TodoListService’s url in angular’s environment file and re-launch the angular app.
 2. Right now username and password is harcoded in encironment file. we can create a login page later and take the username and password from login page.
