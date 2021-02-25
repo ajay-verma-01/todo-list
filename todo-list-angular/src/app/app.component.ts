@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   ) {
     //Important remove the hardcodeing after bulding login page
     //For now I have hardcoded userid and password,
-    //later we can create a login page or take the userid and password from user input form.
+    //later we can create a login page and take the userid and password from login page.
     this.userId = environment.userId;
     this.password = environment.password;
   }

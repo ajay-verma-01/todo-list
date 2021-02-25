@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   api_url: 'http://localhost:5000/api',
+
+  //Important remove the hardcodeing after bulding login page
+  //For now I have hardcoded userid and password,
+  //later we can create a login page and take the userid and password from login page.
   userId: 'ajay.verma',
   password: 'pwd',
 };
