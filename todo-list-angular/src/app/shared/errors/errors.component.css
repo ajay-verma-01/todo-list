@@ -1,0 +1,11 @@
+.errorMessages {
+  display: none;
+  list-style-type: disc;
+  margin: 0 10px 15px 10px;
+  padding: 8px 35px 8px 30px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 2px solid #eed3d7;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}

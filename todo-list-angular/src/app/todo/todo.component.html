@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <app-errors [errors]="errors"></app-errors>
+      <label class="errorMessage" *ngIf="errorMessage != ''">{{
+        errorMessage
+      }}</label>
+    </div>
+
+    <!-- <form ng-submit="addTodo()" name="form"> -->
+    <div class="col-md-8 mx-auto" style="margin-top: 20px">
+      <input
+        class="typehead"
+        placeholder="add new task.."
+        autofocus=""
+        [(ngModel)]="newTodo.description"
+      />
+      <button
+        style="margin-left: 10px"
+        (click)="addTodo()"
+        class="btn btn-primary"
+        [disabled]="newTodo.description === ''"
+      >
+        Add Task
+      </button>
+    </div>
+    <!-- </form> -->
+
+    <div
+      *ngIf="todoList.length > 0"
+      class="col-md-8 mx-auto"
+      style="margin-top: 30px"
+    >
+      <div class="row">
+        <label style="font-style: italic" class="col-1">IsCompleted</label>
+        <label style="margin-left: 40px; font-style: italic" class="col-7"
+          >Description</label
+        >
+        <label style="font-style: italic" class="col-1">Action</label>
+      </div>
+      <div class="row">
+        --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </div>
+      <!-- <div class="row">
+        <div class="col-1">IsCompleted</div>
+        <div class="col-7">Description</div>
+        <div class="col-1"></div>
+      </div> -->
+      <ul class="ulTodoList">
+        <li *ngFor="let todo of todoList" style="margin-top: 5px">
+          <div class="row">
+            <div class="col-1">
+              <input
+                class="checkbox"
+                type="checkbox"
+                (click)="todoComplete(todo)"
+                [checked]="todo.isCompleted === 1"
+              />
+            </div>
+            <div class="col-7">
+              <label
+                style="margin-left: 10px"
+                [class.completed]="todo.isCompleted === 1"
+                >{{ todo.description }}</label
+              >
+            </div>
+            <div class="col-1">
+              <button class="btn btn-primary" (click)="todoDelete(todo)">
+                Delete
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

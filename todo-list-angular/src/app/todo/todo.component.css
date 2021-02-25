@@ -1,0 +1,43 @@
+.todoMainContainer {
+  margin-left: 50px;
+}
+
+.typehead {
+  width: 68.25%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+
+  background-color: #fff;
+  padding-left: 10px;
+}
+
+.ulTodoList {
+  list-style-type: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.errorMessages {
+  display: none;
+  list-style-type: disc;
+  margin: 0 10px 15px 10px;
+  padding: 8px 35px 8px 30px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 2px solid #eed3d7;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.errorMessage {
+  margin: 0 10px 15px 10px;
+  padding: 8px 35px 8px 30px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 2px solid #eed3d7;
+  border-radius: 4px;
+}
