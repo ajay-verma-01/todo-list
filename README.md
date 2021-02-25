@@ -29,7 +29,8 @@ Desktop Setup
 4.	To run the application run command “ng serve” using VS Code terminal / or run “ng server using command prompt”.
 5.	Launch the chrome browser and browse http://localhost:4200
 
-Note: Angular app will run default at port 4200. If it is not able to connect to TodoListService then please check and confirm that TodoListService is up and running. TodoListService runs default on port 5000. If it is running on different port then you can correct the TodoListService’s url in angular’s environment file and re-launch the angular app.
+Note: 1. Angular app will run default at port 4200. If it is not able to connect to TodoListService then please check and confirm that TodoListService is up and running. TodoListService runs default on port 5000. If it is running on different port then you can correct the TodoListService’s url in angular’s environment file and re-launch the angular app.
+2. Right now username and password is harcoded in encironment file. we can create a login page later and take the username and password from login page.
 
 
 # Database Sqlite3:
